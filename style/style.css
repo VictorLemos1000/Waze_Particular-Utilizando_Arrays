@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-image: #e3e8ee;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-transform: uppercase;
+  }
+  .container {
+    text-align: center;
+  }
+
+  .home {
+    text-align: center;
+    background-color: #f0f0f0; 
+    padding: 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  td {
+    width: 20px;
+    height: 15px;
+    border: 1px solid rgb(184, 184, 184);
+    text-align: center;
+  }
+  
+  .building {
+    background-image: url(../assets/casa.png);
+    background-size: 22px;
+  }
+  
+  .street {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .traffic-jam {
+    background-image: url(../assets/carro.png);
+    background-size: 22px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .notFooter {    
+    position: fixed;
+    font-weight: bold;
+    bottom: 0;
+    width: 97.9%;
+    text-align: center;
+    background-color: rgba(12, 120, 222, 0.548); 
+    padding: 20px;
+    font-size: 14px;
+}
+
+.botao-estilizado {
+    text-decoration: none;
+    background-color: #677a8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.botao-estilizado:hover {
+    background-color: #010c16;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between; /* Botões espaçados entre si */
+    align-items: center;
+    margin: 20px auto;
+    width: 30%; /* Define a largura para alinhar melhor os botões */
+  }
+
+  .botao-principal {
+    text-decoration: none;
+    background-color: #2d83e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.botao-home {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .botao-home:hover {
+    background-color: #010c16;
+}
+
+.bemvindo {
+    margin-bottom: 50px;
+}
