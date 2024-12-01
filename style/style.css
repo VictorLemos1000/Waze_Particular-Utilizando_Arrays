@@ -1,28 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
-    background-image: #e3e8ee;
-    font-family: Arial, sans-serif;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(10, 99, 242, 0.762), rgb(0, 0, 0));
+  background-size: cover; /* Faz a imagem preencher o fundo proporcionalmente */
+  background-repeat: no-repeat; /* Remove repetições da imagem */
+  background-position: center; /* Centraliza a imagem */
+  overflow: hidden; /* Remove qualquer scroll desnecessário */
+  backdrop-filter: blur(5px);
+}
 
   h1 {
     text-transform: uppercase;
-  }
-  .container {
     text-align: center;
-  }
-
-  .home {
-    text-align: center;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0be; 
     padding: 40px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    backdrop-filter: blur(5px);
+  }
+
+  .container {
+    text-align: center;
   }
   
   table {
@@ -51,22 +54,8 @@ body {
     background-image: url(../assets/carro.png);
     background-size: 22px;
   }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
 
-  .notFooter {    
+  .footer {    
     position: fixed;
     font-weight: bold;
     bottom: 0;
@@ -101,7 +90,7 @@ body {
 
   .botao-principal {
     text-decoration: none;
-    background-color: #2d83e6;
+    background-color: #1480fb;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -109,20 +98,20 @@ body {
     cursor: pointer;
   }
 
-.botao-home {
-    text-decoration: none;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .botao-home:hover {
-    background-color: #010c16;
+  .botao-principal:hover {
+    background-color: #031f38;
 }
 
-.bemvindo {
-    margin-bottom: 50px;
+.footer {    
+  position: fixed;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d5d9df;
+  font-size: 16px;
+  bottom: 0;
+  width: 97.9%;
+  text-align: center;
+  background-color: rgba(7, 43, 75, 0.548); 
+  padding: 20px;
+  font-size: 14px;
 }
