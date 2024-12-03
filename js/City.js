@@ -1,28 +1,28 @@
 class Cidade {
-    constructor(idCidade) {
+    constructor(nomeCidade) {
         this.layoutCidades = {
-            1: [
+            "Recife": [
                 [1, 0, 0, 0, 1, 0, 0],
                 [1, 0, 0, 0, 1, 0, 0],
                 [1, 0, 1, 1, 1, 1, 1],
                 [1, 0, 1, 0, 0, 0, 0],
                 [1, 1, 1, 1, 1, 1, 1],
             ],
-            2: [
-                [1, 0, 1, 1, 0, 0, 1],
-                [1, 0, 1, 1, 0, 0, 1],
+            "Abreu e Lima": [
+                [0, 0, 1, 1, 0, 0, 1],
+                [1, 0, 0, 1, 0, 0, 1],
                 [1, 1, 1, 1, 1, 1, 1],
                 [1, 0, 1, 1, 0, 0, 1],
                 [1, 0, 1, 1, 0, 0, 1],
             ],
-            3: [
+            "Paulista": [
                 [1, 0, 0, 0, 1, 0, 0],
                 [1, 0, 0, 0, 1, 0, 0],
-                [1, 0, 0, 0, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1],
                 [1, 0, 0, 0, 1, 0, 0],
                 [1, 1, 1, 1, 1, 0, 0],
             ],
-            4: [
+            "Igarassu": [
                 [1, 0, 1, 1, 1, 0, 0],
                 [1, 0, 1, 0, 1, 0, 0],
                 [1, 0, 1, 0, 1, 1, 1],
@@ -32,7 +32,7 @@ class Cidade {
         };
 
         // Define o layout da cidade com base no ID
-        this.layoutCidade = this.layoutCidades[idCidade] || this.layoutCidades[4];
+        this.layoutCidade = this.layoutCidades[nomeCidade] || this.layoutCidades["Recife"];
     }
 
     // Retorna o layout da cidade
