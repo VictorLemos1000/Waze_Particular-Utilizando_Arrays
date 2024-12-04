@@ -3,6 +3,11 @@
 Projeto desenvolvido para a disciplina de **Algoritmos e Estruturas de Dados**.  
 Este projeto simula um mapa interativo utilizando **HTML**, **CSS** e **JavaScript puro**, sem o uso de frameworks ou servidores. Foi implementado para explorar conceitos de arrays e manipulação de DOM.
 
+### Melhorias Futuras
+
+Adicionar pop up ao enfrentar engarrafamento perguntando se ele quer mesmo fazer isso:
+ - Caso sim, apresentar 'delay' ao passar no engarrafamento e depois seguir até o ponto final;
+ - Caso não, reseta trajeto.
 ---
 
 ## Desenvolvedores
