@@ -51,7 +51,7 @@ class Grade {
     
 
     // Lida com cliques nas células, definindo ponto inicial e final
-    lidarCliqueCelula(celula) {
+    cliqueCelula(celula) {
         if (!this.pontoInicial) {
             this.pontoInicial = celula;
             this.pontoInicial.style.backgroundColor = 'green';
