@@ -17,9 +17,13 @@ body {
     text-transform: uppercase;
     text-align: center;
     background-color: #ffffffbe; 
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    border-radius: 10px; /* Arredonda as bordas */
+    width: 500px; 
+    margin: 5px auto;
+    overflow: hidden;
   }
 
   .container {
@@ -61,24 +65,13 @@ body {
     background-size: 17px;
   }
 
-  .footer {    
-    position: fixed;
-    font-weight: bold;
-    bottom: 0;
-    width: 97.9%;
-    text-align: center;
-    background-color: rgba(12, 120, 222, 0.548); 
-    padding: 20px;
-    font-size: 14px;
-}
-
 .botao-estilizado {
     text-decoration: none;
     background-color: #677a8f;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
   }
 
@@ -87,9 +80,12 @@ body {
 }
 
 .botoes {
-    align-items: center;
-    margin: 20px auto;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+}
 
   .botao-principal {
     text-decoration: none;
@@ -99,6 +95,7 @@ body {
     padding: 13px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 60px;
   }
 
   .botao-principal:hover {
@@ -119,20 +116,6 @@ body {
   background-color: #3c2018;
 }
 
-.footer {    
-  position: fixed;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #d5d9df;
-  font-size: 16px;
-  bottom: 0;
-  width: 97.9%;
-  text-align: center;
-  background-color: rgba(7, 43, 75, 0.548); 
-  padding: 20px;
-  font-size: 14px;
-}
-
 img {
   position: absolute; /* Permite centralizar dentro da célula */
   top: 50%;
@@ -145,12 +128,24 @@ img {
 }
 
 #tituloCidade {
-  background-color: #ecececa1; /* Cor de fundo */
-  color: rgba(29, 23, 141, 0.79); /* Cor do texto */
-  padding: 10px; /* Espaçamento interno */
+  background-color: #130d09bb; /* Cor de fundo */
+  color: rgba(255, 255, 255, 0.79); /* Cor do texto */
+  padding: 5px; /* Espaçamento interno */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 5px; /* Arredonda as bordas */
   width: fit-content; /* Ajusta a largura ao conteúdo */
   margin: 0 auto; /* Centraliza o título */
+  margin-top: 15px;
   text-align: center; /* Centraliza o texto */
+}
+
+.botao-voltar {
+  margin-right: auto;
+}
+
+.botoes-centro {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
 }
